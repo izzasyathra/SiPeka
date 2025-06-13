@@ -28,4 +28,91 @@ Aplikasi ini merupakan sistem layanan publik berbasis digital yang bertujuan unt
    - Admin dapat menerima, memverifikasi, dan merespons laporan dengan cepat.
 ---
 
+## 📌 Deskripsi Singkat
 
+SiPeka (Sistem Pelaporan Sampah dan Edukasi Lingkungan) adalah aplikasi berbasis Java yang memfasilitasi pelaporan sampah oleh warga, edukasi lingkungan, forum diskusi, hingga sistem gamifikasi untuk meningkatkan partisipasi warga.
+
+---
+
+## ▶ Cara Menjalankan Aplikasi
+
+1. Pastikan Java Development Kit (JDK) sudah terinstal di sistem.
+2. Clone repositori ini:
+
+   
+   git clone https://github.com/izzasyathra/SiPeka.git
+   
+3. Buka project di IDE (misalnya IntelliJ atau NetBeans).
+4. Jalankan file utama:
+
+   
+   Main.java
+   
+
+   File ini merupakan titik masuk aplikasi dan akan membuka antarmuka utama (GUI).
+
+---
+
+## 🗂 Struktur Kode
+
+
+SiPeka/
+├── Main.java                     # Entry point aplikasi
+├── README.md
+├── .gitignore
+
+├── controller/                   # Logika bisnis & alur program
+│   ├── PengendaliAdmin.java
+│   ├── PengendaliForum.java
+│   ├── PengendaliLaporan.java
+│   ├── PengendaliStatistik.java
+│   ├── PengendaliJadwal.java
+│   ├── PengendaliEdukasi.java
+│   ├── PengendaliGamifikasi.java
+│   ├── LayananNotifikasi.java
+│   ├── PenyimpananData.java
+│   └── FormatTanggal.java
+
+├── model/                        # Representasi data/objek
+│   ├── Pengguna.java
+│   ├── LaporanSampah.java
+│   ├── JadwalPengangkutan.java
+│   ├── StatistikLaporan.java
+│   ├── ForumDiskusi.java
+│   ├── Gamifikasi.java
+│   ├── AcaraEdukasi.java
+│   ├── StatusLaporan.java
+│   └── RTRanking.java
+
+├── tampilan/                     # Antarmuka pengguna (GUI)
+│   ├── MenuUtama.java
+│   ├── PanelAdmin.java
+│   ├── ForumWarga.java
+│   ├── FormLaporanSampah.java
+│   ├── PeringkatRT.java
+│   ├── DaftarLaporan.java
+│   ├── GamifikasiView.java
+│   ├── NotifikasiJadwal.java
+│   ├── KalenderEdukasi.java
+│   └── StatistikBulanan.java
+
+
+---
+
+## 💡 Penerapan Pilar OOP
+
+### 1. Encapsulation
+
+Setiap class model seperti Pengguna, LaporanSampah, dan StatistikLaporan membungkus data dalam atribut privat dan menyediakan akses melalui method. Ini menjaga keamanan dan integritas data.
+
+### 2. Inheritance
+
+Struktur class mendukung pewarisan sifat dari class umum seperti Pengguna, yang dapat dikembangkan menjadi class seperti Admin atau Warga untuk peran yang berbeda.
+
+### 3. Polymorphism
+
+Beberapa class GUI seperti MenuUtama, PanelAdmin, dan ForumWarga memiliki method yang sama namun menampilkan hasil atau tampilan yang disesuaikan dengan pengguna masing-masing.
+
+### 4. Abstraction
+
+Fungsi kompleks seperti penyimpanan data (PenyimpananData.java) dan layanan notifikasi (LayananNotifikasi.java) disederhanakan melalui interface method yang mudah digunakan tanpa perlu memahami logika internalnya.
