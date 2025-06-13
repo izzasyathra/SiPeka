@@ -28,12 +28,6 @@ Aplikasi ini merupakan sistem layanan publik berbasis digital yang bertujuan unt
    - Admin dapat menerima, memverifikasi, dan merespons laporan dengan cepat.
 ---
 
-## 📌 Deskripsi Singkat
-
-SiPeka (Sistem Pelaporan Sampah dan Edukasi Lingkungan) adalah aplikasi berbasis Java yang memfasilitasi pelaporan sampah oleh warga, edukasi lingkungan, forum diskusi, hingga sistem gamifikasi untuk meningkatkan partisipasi warga.
-
----
-
 ## ▶ Cara Menjalankan Aplikasi
 
 1. Pastikan Java Development Kit (JDK) sudah terinstal di sistem.
